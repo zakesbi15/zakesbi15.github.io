@@ -14,11 +14,65 @@
 
 		<script type="text/javascript">
 			function changeText() {
-				$("#foo").html("scott was here");
+				$("#foo").html("zack was here");
 				$("#foo").fadeOut();
 			}
 		</script>
 
+
+
+
+
+
+
+
+		<p id="checkbox">one more line</p>
+		<input type="checkbox" onclick="changeColor()" value="Click me." />
+
+
+		<script type="text/javascript">
+			function changeColor() {
+				$("#checkbox").css("color", "green")
+			}
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<p id="lame">one more line</p>
+		<input type="button" onclick="changeTextAgain()" value="click me" />
+		<script type="text/javascript">
+			function changeTextAGain() {
+				$("#lame").html("i dont know");
+				$('.myClass td').css({'background-color': 'yellow'}); 
+
+			}
+		</script>
+
+		<p id="foo">one more line</p>
+		<input type="button" onclick="changeText()" value="click me" />
+
+
+		<script type="text/javascript">
+			function changeText() {
+				$("#foo").html("scott was here");
+				$("#foo").fadeOut();
+			}
+		</script>
     </body>
 </html>
 
