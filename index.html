@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 		<meta charset="utf-8" />
 		<title> My Bio Page </title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Exo:200,500,700' rel='stylesheet' type='text/css'>
-
+</head>
 <h1>I'm Zachary!</h1> <IMG SRC="http://puu.sh/7GK19.png" ALT="I'm a beaut." WIDTH=414 HEIGHT=488> <p>hi</>
 
 <hr>
   
 <body>
+
+	<script type="text/javascript">
+		function changeColor() {
+			$("#colorbutton").css("color", "purple");
+		}
+
+		function changeText() {
+			$("#quote").html(""How lucky I am to have something that makes saying goodbye so hard."");
+		}
+	</script>
   <h1>Introduction to Me</h1>
   
   <p>My name is Zachary and I am 16 years old. I go to Saint Mary's College High School where I am a junior. I live in El Sobrante here in the Bay Area. <br>I am currently learning the art of HTML (HyperText Markup Language) and am using this biography to hone my skills. There's plenty to know about me!</p>
@@ -59,21 +69,15 @@
       <li><a href="http://speedrunslive.com/#">Twitch.tv/Speedruns</a></li>
       <li><a href="http://www.youtube.com/">Youtube</a></li></ul>
       
-<h1>Miscellaneous interactivities.</h1>
+<h1>Miscellaneous.</h1>
 
+
+      <li><a href="http://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a></li>
 <h2 id="colorbutton">Hello!</h2>
 <p id="quote">...</p>
 
 <input type="button" onclick="changeText()" value="Click here to see my favorite quote." />
-<input type="button" onclick="changeColor()" value="Click here to see my favorite color." />
-                <script type="text/javascript">
-                        function changeColor() {
-                                $("#colorbutton").css("color", "purple");
-                        }
-                        function changeText() {
-                                $("#quote").html(""How lucky I am to have something that makes saying goodbye so hard."");
-                        }
 
-                </script>
+<input type="button" onclick="changeText()" value="Click here to see my favorite quote." />
   </body>
   </html> 
