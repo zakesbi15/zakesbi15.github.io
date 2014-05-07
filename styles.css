@@ -4,13 +4,10 @@ body {
   line-height: 1.5;
   background: #eee;
   color: #333;
-  font-weight:200;
+  font-weight:300;
   text-align:center;
 }
 
-ul {
-  text-align:center;
-}
 h1 {
   color: #e77;
   font-weight:700;
@@ -20,7 +17,7 @@ h1 {
 
 h2 {
   color: #444;
-  font-weight:500;
+  font-weight:400;
   line-height: 1;
   text-align:center;
 }
