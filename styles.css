@@ -8,6 +8,13 @@ body {
   text-align:center;
 }
 
+<<<<<<< HEAD
+=======
+ul {
+  text-align:center;
+  list-style-position: inside;
+}
+>>>>>>> 0ffa9d8132633d77439ab5c5fc3c4c4fc235de61
 h1 {
   color: #e77;
   font-weight:700;
