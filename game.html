@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Guessing Game</title>
+</head>
+ 
+<body>
+	<script>
+	var answer = Math.random()*10;
+	var answer = Math.ceil(4.1);
+ 	var number = prompt('Enter your guess.');
+
+	while (number != answer) {
+		if (number > answer) {
+			alert("Your guess is too big.");
+			var number = prompt('Guess again.');
+		} else {
+			alert("Your guess is too small.");
+			var number = prompt('Guess again.');
+		}
+	}
+	
+	if (answer = number) {
+		alert("YOU GOT IT");
+		window.location.replace("http://blackacrebrewing.com/hey.swf");
+	}
+
+	</script>
+ 
+</body>
+</html>
+
