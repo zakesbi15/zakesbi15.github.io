@@ -7,24 +7,26 @@
  
 <body>
 	<script>
-	var answer = Math.random()*10;
-	var answer = Math.ceil(4.1);
+	var answer = Math.ceil((Math.random()*10)+1);
  	var number = prompt('Enter your guess.');
-
-	while (number != answer) {
+	for (i = 0; i < 10; i++) {
 		if (number > answer) {
 			alert("Your guess is too big.");
 			var number = prompt('Guess again.');
-		} else {
+		} else if (number < answer) {
 			alert("Your guess is too small.");
 			var number = prompt('Guess again.');
 		}
-	}
 	
-	if (answer = number) {
-		alert("YOU GOT IT");
-		window.location.replace("http://blackacrebrewing.com/hey.swf");
+		else if (answer == number) {
+			alert("YOU GOT IT");
+		 	break;	
+		}
 	}
+		
+	window.location.replace("http://blackacrebrewing.com/hey.swf");
+	
+	
 
 	</script>
  
