@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
+  <script type="text/processing" data-processing-target="targetcanvas">
+    void setup() {
+      size(400, 400);
+      noStroke();
+
+    }
+    var f = createFont("monospace");
+textFont(f);
+
+strokeWeight(3);
+
+var total = 0;
+var inside = 0;
+    void draw() {
+      for (var i = 0; i < 50; i += 1) {
+        var randomX = random(0, 400);
+        var randomY = random(0, 400);
+        var d = dist(randomX, randomY, 200, 200);
+
+        if (d < 200) {
+          // we're inside the circle
+          stroke(255, 0, 0);
+          inside += 1;
+        } else {
+          stroke(89, 79, 79);
+        }
+        point(randomX, randomY);
+        total += 1;
+
+      }
+
+      stroke(0, 0, 0);
+      fill(255, 255, 255);
+      textFont(f, 30);
+      textSize(14);
+      rect(20, 350, 250, 40);
+      fill(0, 0, 0);
+      var num1 = (inside / total) * 4;
+      text(" Pi's approximation is " + num1.toFixed(5), 20, 374);
+    }
+  </script>
+</head>
+
+<body>
+  <canvas id="targetcanvas" width="400" height="400"></canvas>
+</body>
+
+</html>
